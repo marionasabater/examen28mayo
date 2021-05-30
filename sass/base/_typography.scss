@@ -1,0 +1,41 @@
+/* @TIPOGRAFÍA */
+/* ********** */
+
+
+// FONT-FACE
+@font-face {
+    font-family: "robotoRegular";
+    src:    url(../../font/robotoRegular.woff2) format("woff2"),
+            url(../../font/robotoRegular.woff) format("woff");
+
+    font-family: "robotoBold";
+    src:    url(../../font/robotoBold.woff2) format("woff2"),
+            url(../../font/robotoBold.woff) format("woff");
+
+    font-family: "robotoLight";
+    src:    url(../../font/robotoLight.woff2) format("woff2"),
+    url(../../font/robotoLight.woff) format("woff");
+
+}
+
+html{
+    font-size: 16px;
+    font-family: $fontFamily;
+    color: map-get($colores, negro);
+}
+
+// Clases Tipográficas
+
+.light {font-family: $fontFamily-light;
+        color:grey;}
+
+.bold {font-family: $fontFamily-bold;}
+
+.grande {font-size: 40px;
+        font-weight: 900;}
+
+.medio {font-size: 20px;
+        font-weight: 800;
+        }
+
+.colorVerde {color: rgb(27, 184, 27);}

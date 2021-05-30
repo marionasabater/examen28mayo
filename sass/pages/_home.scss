@@ -1,0 +1,104 @@
+/* @HOME */
+/* ********** */
+
+/* franja de arriba */
+
+/* version smartphone */
+
+.contenedorGrande { display: flex;
+                    flex-direction:row;
+                    justify-content: space-between;
+                    // @media only screen and (min-width: 320px) and (orientation: portrait){
+                    //     flex-direction: column;
+                    // } NO HAY MANERA NO ME SALE 
+                    
+}
+
+/* version smartphone */
+@media only screen and (min-width: 320px) and (orientation: portrait){
+.contenedorGrande { display: flex;
+                    flex-direction:column;
+                    justify-content: space-between;
+                    height: 850px;
+                    }
+                    }   
+
+.followers{
+    text-align: center;
+    line-height: 1%;
+}
+
+.tarjetaGrande {display:flex;
+                flex-direction: column;
+                flex-basis: 20%;
+                justify-content: space-around;
+                align-items: center;
+                background-color:#F9F9FD;
+                // padding: 50px;
+                border-radius: 5px;
+
+                &.azul { 
+                    border-top: 5px solid map-get($colores, azul);
+                }
+                
+                &.multi { 
+                    border-top: 5px solid rgb(198, 28, 138);
+                }
+
+                &.rojo { 
+                    border-top: 5px solid rgb(193, 7, 7);
+                }
+                }
+
+
+/* franja de abajo */
+/*******************/
+
+/* version desktop */
+
+.cuadricula {display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 35vh;
+            }
+
+/* version smartphone */
+
+@media only screen and (min-width: 320px) and (orientation: portrait){
+    .cuadricula { display: flex;
+                        flex-direction:column;
+                        justify-content: space-around;
+                        height: 1100px;
+                        }
+                        }  
+
+/* version desktop */
+
+.contenedorPequeno {display: flex;
+                    flex-direction:row;
+                    // @media only screen (min-width: 320px) and (orientation: portrait) {flex-direction: column;}
+                    justify-content: space-between;
+}
+
+/* version smartphone */
+@media only screen and (min-width: 320px) and (orientation: portrait){
+.contenedorPequeno { display: flex;
+                    flex-direction:column;
+                    justify-content: space-between;
+                    height: 500px;
+                    }
+                }
+
+
+
+.tarjetaPequena {display:flex;
+                flex-direction: column;
+                flex-basis: 20%;
+                background-color:#F9F9FD;
+                border-radius: 5px;
+                
+            article {display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;}
+            }

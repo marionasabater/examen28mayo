@@ -1,0 +1,29 @@
+/* @HEADERS */
+/* ********** */
+
+
+header {display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+        }
+
+/* smartphone */
+@media only screen and (min-width: 320px) and (orientation: portrait){
+header{
+    display:flex;
+    flex-direction: column;
+    }
+}
+
+.linea{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 10%;
+}
+
+/* smartphone */
+@media only screen and (min-width: 320px) and (orientation: portrait){
+.linea {border-top: 1px solid lightgrey;}
+}
